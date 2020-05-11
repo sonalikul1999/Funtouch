@@ -1,0 +1,61 @@
+from django.shortcuts import render
+
+# Create your views here.
+def blog(request):
+	return render(request,'blog.html',{})
+def blogalt(request):
+	return render(request,'blog-alt.html',{})
+def blogsingle(request):
+	return render(request,'blog-single.html',{})
+def casestudies(request):
+	return render(request,'case-studies.html',{})
+def casestudiesalt(request):
+	return render(request,'case-studies-alt.html',{})
+def casestudiessingle(request):
+	return render(request,'case-studies-single.html',{})
+def index(request):
+	return render(request,'index.html',{})
+def page(request):
+	return render(request,'page.html',{})
+def pageabout(request):
+	return render(request,'page-about.html',{})
+def pageclients(request):
+	return render(request,'page-clients.html',{})
+def pagecontact(request):
+	return render(request,'page-contact.html',{})
+def pagecontactalt(request):
+	return render(request,'page-contact-alt.html',{})
+def pageebooks(request):
+	return render(request,'page-ebooks.html',{})
+def pagefaqs(request):
+	return render(request,'page-faqs.html',{})
+def pagefullwidth(request):
+	return render(request,'page-fullwidth.html',{})
+def pagenotfound(request):
+	return render(request,'page-not-found.html',{})
+def pagepricing(request):
+	return render(request,'page-pricing.html',{})
+def pageseoanalysis(request):
+	return render(request,'page-seo-analysis.html',{})
+def pageservices(request):
+	return render(request,'page-services.html',{})
+def pagetestimonials(request):
+	return render(request,'page-testimonials.html',{})
+def service01(request):
+	return render(request,'service-01.html',{})
+def service02(request):
+	return render(request,'service-02.html',{})
+def service03(request):
+	return render(request,'service-03.html',{})
+def service04(request):
+	return render(request,'service-04.html',{})
+def service05(request):
+	return render(request,'service-05.html',{})
+def service06(request):
+	return render(request,'service-06.html',{})
+def service07(request):
+	return render(request,'service-07.html',{})
+def service08(request):
+	return render(request,'service-08.html',{})
+def service09(request):
+	return render(request,'service-09.html',{})

@@ -39,6 +39,49 @@
 	<![endif]-->
 
 </head>
+
+<style>
+.containerhover {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: white;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.containerhover:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.text {
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+</style>
+
+
 <body>
 	
 	<div id="wrapper">
@@ -174,38 +217,191 @@
 			<div class="container-fluid">
 				<div class="row text-center">
 					<div class="col-md-3 col-sm-6 nopad">
-						<div style="border-style:solid;border-width:10px;border-color:green;"class="home-service w3-hover-green">
-							<img style="width:150px;"src="{% static 'upload/wbd.png' %}">
-							<p>Web Design & Development</p>
-						</div><!-- end home-service -->
+						<div class="containerhover" style="width:100%;padding-top:70px;">
+						  
+						  <img style="width:150px;height:150px;border-radius:500px;margin:auto;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" src="{% static 'upload/wbd.png' %}" class="image">
+						  
+						  <div style="margin-top:50px;background-color:orange;color:white;font-size:20px;font-weight:bold;padding-top:10px;padding-bottom:10px;" class="w3-hover-black">Web Design & Development</div>
+
+						  <div class="overlay" style="border-style:solid;border-width:10px;border-color:orange;">
+						    <p style="color:black;padding:30px;">Web development is the work involved in developing a website for the Internet (World Wide Web) or an intranet (a private network).</p>
+						    <div class="w3-button w3-black w3-hover-orange" style="font-size:20px;border-radius:50px;padding-top:35px;padding-bottom:35px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">View All</div>
+						    
+						  </div>
+
+						</div>					
 					</div><!-- end col -->
 
 					<div class="col-md-3 col-sm-6 nopad">
-						<div class="home-service c2">
-							<i class="flaticon-chat"></i>
-							<img style="width:190px;"src="{% static 'upload/imhfg.jpg' %}">
-							<p>Digital Marketing</p>
-						</div><!-- end home-service -->
+						<div class="containerhover" style="width:100%;padding-top:70px;">
+						  
+						  <img style="width:150px;height:150px;border-radius:500px;margin:auto;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" src="{% static 'upload/imhfg.jpg' %}" class="image">
+						  
+						  <div style="background-color:#00bfff;margin-top:50px;color:white;font-size:20px;font-weight:bold;padding-top:10px;padding-bottom:10px;" class="w3-hover-black">Digital Marketing</div>
+
+						  <div class="overlay" style="border-style:solid;border-width:10px;border-color:#00bfff;">
+						    <p style="color:black;padding:30px;">Digital Marketing - Content. Content marketing is a strategic marketing approach focused on creating and distributing valuable.
+							</p>
+						    <div class="w3-button w3-black w3-hover-orange" style="font-size:20px;border-radius:50px;padding-top:35px;padding-bottom:35px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">View All</div>
+						    
+						  </div>
+
+						</div>
 					</div><!-- end col -->
 
 					<div class="col-md-3 col-sm-6 nopad">
-						<div class="home-service c3">
-							<i class="flaticon-domain"></i>
-							<img style="width:150px;"src="{% static 'upload/hkut.png' %}">
-							<p>Moblie App Development</p>
-						</div><!-- end home-service -->
+						<div class="containerhover" style="width:100%;padding-top:70px;">
+						  
+						  <img style="width:150px;height:150px;border-radius:500px;margin:auto;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" src="{% static 'upload/hkut.png' %}" class="image">
+						  
+						  <div style="margin-top:50px;background-color:#f90606	;color:white;font-size:20px;font-weight:bold;padding-top:10px;padding-bottom:10px;" class="w3-hover-black">Mobile App Development</div>
+
+						  <div class="overlay" style="border-style:solid;border-width:10px;border-color:#f90606	;">
+						    <p style="color:black;padding:30px;">Mobile app development is the act or process by which a mobile app is developed for mobile devices, such as personal digital assistants.
+							</p>
+						    <div class="w3-button w3-black w3-black-hover-orange" style="font-size:20px;border-radius:50px;padding-top:35px;padding-bottom:35px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">View All</div>
+						    
+						  </div>
+
+						</div>
 					</div><!-- end col -->
 
 					<div class="col-md-3 col-sm-6 nopad last">
-						<div class="home-service c4">
-							<i class="flaticon-medal"></i>
-							<img style="width:150px;"src="{% static 'upload/mhu67.png' %}">
-							<p>Search Engine Optimization</p>
-						</div><!-- end home-service -->
+						<div class="containerhover" style="width:100%;padding-top:70px;">
+						  
+						  <img style="width:150px;height:150px;border-radius:500px;margin:auto;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" src="{% static 'upload/mhu67.png' %}" class="image">
+						  
+						  <div style="margin-top:50px;background-color:#00ff00	;color:white;font-size:20px;font-weight:bold;padding-top:10px;padding-bottom:10px;" class="w3-hover-black">Search Engine Optimization</div>
+
+						  <div class="overlay" style="border-style:solid;border-width:10px;border-color:#00ff00	;">
+						    <p style="color:black;padding:30px;">Search engine optimization is the process of growing the quality and quantity of website traffic by increasing the visibility.
+							</p>
+						    <div class="w3-button w3-black w3-hover-orange" style="font-size:20px;border-radius:50px;padding-top:35px;padding-bottom:35px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">View All</div>
+						    
+						  </div>
+
+						</div>
 					</div><!-- end col -->
 				</div><!-- end row -->
 			</div><!-- end container -->
 		</section><!-- end section -->
+		<style type="text/css">
+			.zoom:hover {transform: scale(1.2);}
+		</style>
+		
+		<section class="section lb nopad spotlight style1">
+		    <div class="content">
+		        <p>Technology,Creativity and Bussiness, are threaded together to extract the best of the web for your brand with our experienced customer-first approach and a team in love with web design technology.</p>
+		        <div class="row">
+		        	<div style="border-radius:10px;margin:20px;padding:10px;background-color:#ff4000;color:white;"class="col-md-4 zoom w3-card-4 text-center">
+		        		<i style="font-size:25px;font-weight:bold;background-color:black;border-radius:100px;padding:10px;"class="fa fa-code"></i>
+		        		<p style="font-size:12px;">Experience of more than 22 years in website Development</p>
+		        	</div>
+		        	<div style="border-radius:10px;margin:20px;padding:10px;background-color:#ffff00;color:black;"class="col-md-4 zoom w3-card-4 text-center">
+		        		<i style="font-size:25px;font-weight:bold;background-color:white;border-radius:100px;padding:10px;"class="fa fa-flask"></i>
+		        		<p style="font-size:12px;">Developed 25,000+website Across Various industries & geographies</p>
+		        	</div>
+		        </div>
+		        <div class="row">
+		        	<div style="border-radius:10px;margin:20px;padding:10px;background-color:#40ff00;color:black;"class="col-md-4 zoom w3-card-4 text-center">
+		        		<i style="font-size:25px;font-weight:bold;background-color:white;border-radius:100px;padding:10px;"class="fa fa-briefcase"></i>
+		        		<p style="font-size:12px;">Talented workforce of 200+professionals</p>
+		        	</div>
+		        	<div style="border-radius:10px;margin:20px;padding:10px;background-color:#00bfff;color:white;"class="col-md-4 zoom w3-card-4 text-center">
+		        		<i style="font-size:25px;font-weight:bold;background-color:black;border-radius:100px;padding:10px;"class="fa fa-sellsy"></i>
+		        		<p style="font-size:12px;">190+live workstations and 70+dedicated self managed servers</p>
+		        	</div>
+
+		        	
+		        </div>     
+		    </div>
+
+		    <div class="image col-md-4" style="background-image:url({% static 'upload/smiling-woman-shirt-pointing-looking-up_171337-1618.jpg' %});background-size:auto 100%;">
+		    	<div class="row">
+		    		<div class="col-md-4 col-sm-12 col-xs-12" style="margin:0px;">
+		         		<img style="transition: transform .2s;width:100px;height:100px;margin-top:20px;margin-left:20px;border-radius:500px;" src="{% static 'upload/asp.net-core.png' %}" class="zoom">
+		         	</div>
+		         	<div class="col-md-4 col-sm-12 col-xs-12" style="margin:0px;">
+		         		<img style="transition: transform .2s;width:100px;height:100px;margin-top:20px;margin-left:20px;border-radius:500px;" src="{% static 'upload/download (1).png' %}" class="zoom">
+		         	</div>
+		         	<div class="col-md-4 col-sm-12 col-xs-12" style="margin:0px;">
+		         		<img style="transition: transform .2s;width:100px;height:100px;margin-top:20px;margin-left:20px;border-radius:500px;" src="{% static 'upload/download.png' %}" class="zoom">
+		         	</div>
+		         </div>
+		         <div class="row" style="margin-top:150px;">
+		    		<div class="col-md-4 col-sm-12 col-xs-12" style="margin:0px;">
+		         		<img style="transition: transform .2s;width:100px;height:100px;margin-top:20px;margin-left:20px;border-radius:500px;" src="{% static 'upload/python.png' %}" class="zoom">
+		         	</div>
+		         	<div class="col-md-4 col-sm-12 col-xs-12" style="margin:0px;">
+		         		<img style="transition: transform .2s;width:100px;height:100px;margin-top:20px;margin-left:20px;border-radius:500px;" src="{% static 'upload/unnamed.png' %}" class="zoom">
+		         	</div>
+		         	<div class="col-md-4 col-sm-12 col-xs-12" style="margin:0px;">
+		         		<img style="transition: transform .2s;width:100px;height:100px;margin-top:20px;margin-left:20px;border-radius:500px;" src="{% static 'upload/java-logo-transparent-png-4.png' %}" class="zoom">
+		         	</div>
+		         </div>
+		    </div>
+		</section>
+		<section style="background-size:100% auto;background-image:url({% static 'upload/apple-computer-cup-desk-wallpaper-preview.jpg' %})"class="section bt">
+			<div class="container">
+					<div class="section-title text-center">
+					<h3 style="font-size:70px;color:white;font-weight:bold;">Web Designing Services
+					</h3>
+					<small>For Everyone, For All Budgets </small>
+					<hr>
+				</div><!-- end section-title -->
+				<div class="owl-carousel owl-theme lightcasestudies withhover">
+					<div class="item-carousel">
+						<div style="color:white;height:266px;background-color:transparent;"class="case-box text-center">
+							<div style="border-style:solid;border-width:5px;border-color:white;height:266px;border-radius:20px;">
+							<i style="font-size:175px;margin-top:10px;"class="fa fa-globe"></i>
+							<h2 style="color:white;">Custom Web Design</h2>
+							<div class="magnifier">
+								<div style="background-color:orange;height:100%;width:100%;padding:20px;">
+									<h3 style="color:white;font-weight:bold;">Custom Web Design</h3>
+									<p>Our expertise meets your whims! We shape your thoughts with our work by designing a website, with features and functionality of your choice.</p>
+									<div style="width:100px;background-color:transparent;border-radius:10px;border-color:white;border-style:solid;"class="w3-button w3-hover-black"href="">Read More</div>
+								</div> 
+							</div>
+							</div>
+						</div><!-- end case-box -->
+					</div><!-- end col -->
+
+					<div class="item-carousel">
+						<div style="color:white;height:266px;background-color:transparent;"class="case-box text-center">
+							<div style="border-style:solid;border-width:5px;border-color:white;height:266px;border-radius:20px;">
+							<i style="font-size:175px;margin-top:10px;"class="fa fa-desktop"></i>
+							<h2 style="color:white;">Responsive Web Design</h2>
+							<div class="magnifier">
+								<div style="background-color:orange;height:100%;width:100%;padding:20px;">
+									<h3 style="color:white;font-weight:bold;">Responsive Web Design</h3>
+									<p>Going mobile is indispensable! Prepare your bussiness for the future, with our responsive website that fits flawlessly into the dimensions of all screens including desktop. </p>
+									<div style="width:100px;background-color:transparent;border-radius:10px;border-color:white;border-style:solid;"class="w3-button w3-hover-black"href="">Read More</div>
+								</div> 
+							</div>
+							</div>
+						</div><!-- end case-box -->
+					</div><!-- end col -->
+
+					<div class="item-carousel">
+						<div style="color:white;height:266px;background-color:transparent;"class="case-box text-center">
+							<div style="border-style:solid;border-width:5px;border-color:white;height:266px;border-radius:20px;">
+							<i style="font-size:175px;margin-top:10px;"class="fa fa-shopping-cart"></i>
+							<h2 style="color:white;">Custom Web Design</h2>
+							<div class="magnifier">
+								<div style="background-color:orange;height:100%;width:100%;padding:20px;">
+									<h3 style="color:white;font-weight:bold;">E-Commerce Web Design</h3>
+									<p>Built with brilliance, created for conversions! We design futuristic e-commerce store managment and amplify conversion rate, with the power of technology.</p>
+									<div style="width:100px;background-color:transparent;border-radius:10px;border-color:white;border-style:solid;"class="w3-button w3-hover-black"href="">Read More</div>
+								</div> 
+							</div>
+							</div>
+						</div><!-- end case-box -->
+					</div><!-- end col -->
+
+					
+				</div>
+		    </div>
+		</section>
 
 		<section class="section overfree">
 			<div class="icon-center"><i class="fa fa-anchor"></i></div>
@@ -396,9 +592,12 @@
 				</ul>
 		    </div>
 		</section>
+			
+
 		<section class="section bt">
 				
 		</section>
+
 		<section class="section bt">
 			<div class="container">
 				<div class="section-title text-center">
@@ -1122,5 +1321,9 @@
 	<script src="{% static 'js/animate.js' %}"></script>
 	<script src="{% static 'js/owl.carousel.js' %}"></script>
 	<script src="{% static 'js/custom.js' %}"></script>
+	
+  
+
+
 </body>
 </html>
